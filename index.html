@@ -1,41 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div's</title>
-
-    <link rel="stylesheet" href="static/css/style.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loja de eletrônicos">
+    <meta name="author" content="Sua Loja Eletrônica">
+    <title>Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../aulaHTML/SA01/SA01/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card-title {
+            font-size: 1.25rem;
+        }
+        .card-text {
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
 
-<div class="content">
-
-    <h1 class="title" >ANIMAIS</h1>
-
-    <div class="container container-flex">
-
-        <div class="container1" style="display: block; text-align: left;">
-            <h3 class="text">ISSO É UM TOURO</h3>
-            <img src="static/imagens/touro-miura.webp" class="image-3" />
-            <p class="text">O touro é o bovino macho reprodutor, enquanto o boi é o bovino macho castrado. Ambos são herbívoros ruminantes. 
-            </p>
-        </div>
-
-        <div class="container2" style="display: block; text-align: center;">
-            <h3 class="text">ISSO É UMA TARTARUGA</h3>
-            <img src="static/imagens/jonathan-tartaruga.jpg" class="image-3" />
-            <p class="text">tartarugas são uma ordem de répteis pertencentes ao clado Testudinata. Correspondem a 14 famílias que possuem em torno de 356 espécies, que ocorrem em regiões tropicais e temperadas, algumas delas ameaçadas de extinção.</p>
-        </div>
-
-        <div class="container3" style="display: block; text-align: right;">
-            <h3 class="text">ISSO É UM GORILA</h3>
-            <img src="static/imagens/Gorille_des_plaines_de_l'ouest_à_l'Espace_Zoologique.jpg" class="image-3" />
-            <p class="text">Os gorilas são mamíferos primatas pertencentes ao gênero Gorilla, endêmicos das florestas tropicais do centro da África. O fato de compartilharem entre 98 e 99% do DNA com os seres humanos faz dos gorilas um dos parentes vivos mais próximos, logo depois dos bonobos e chimpanzés.</p>
-        </div>
-
+<header class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Loja de Eletrônicos</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
+</header>
 
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Bem-vindo à Nossa Loja</h1>
+                <p class="lead text-body-secondary">Encontre os melhores eletrônicos com os melhores preços e ofertas.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Ver Produtos</a>
+                    <a href="#" class="btn btn-secondary my-2">Ofertas Especiais</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="SA01/SA01/album/celular1.webp" alt="Produto 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sansung A34</h5>
+                            <p class="card-text">Smartphone Samsung Galaxy A34 5G 6,6 fhd + 90Hz 256GB 8GB ram Câmera Tripla 48MP Dual Chip - Preto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Adicionar ao Carrinho</button>
+                                </div>
+                                <small class="text-body-secondary">R$ 1.299,00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="SA01/SA01/album/fone" alt="Produto 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Fone de Ouvido Bluetooth</h5>
+                            <p class="card-text">Fone De Ouvido Bluetooth Original Compatível C iPhone E iPad com cancelamento de ruído.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Adicionar ao Carrinho</button>
+                                </div>
+                                <small class="text-body-secondary">R$ 299,00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="SA01/SA01/album/notebook" alt="Produto 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Dell inspirion</h5>
+                            <p class="card-text">Notebook Dell Inspiron - Intel Core i7 11ª Geração, 16GB, SSD 512GB NVMe, Tela 15.6".</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Adicionar ao Carrinho</button>
+                                </div>
+                                <small class="text-body-secondary">R$ 3.499,00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    <h1 style="margin-top: 30px; margin-bottom: 0px; text-align: center;">Entre em contato conosco</h1>
+
+      <div class="card shadow-sm" style="padding: 10px; margin: 50px; margin-top: 10px;">
+        <form>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">Digite seu email.</div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Assunto</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Descreva" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea required>
+          </div>
+      
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+                    
+            
+                   
+
+</main>
+
+<footer class="text-body-secondary py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Voltar ao topo</a>
+        </p>
+        <p class="mb-1">Loja de Eletrônicos &copy; 2024</p>
+        <p class="mb-0">Dúvidas? <a href="#">Entre em contato</a>.</p>
+    </div>
+</footer>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
