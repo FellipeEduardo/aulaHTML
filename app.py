@@ -1,4 +1,4 @@
-from flask import (Flask, request) # Importa o flask
+from flask import (Flask, render_template, request) # Importa o flask
 
 app = Flask(__name__) # cria uma instância
 
@@ -41,3 +41,8 @@ def nomesobrenome():
   sobrenome = request.args.get('sobrenome')
   return f"""<h1> sobrenome </h1>
   <p>{sobrenome},{nome}</p>"""
+
+@app.route("/tabuada/<int:numero>", methods=("GET",))
+def tabuada(numero):
+   
+   return "render_template"('tabuada.html', numero=numero)
